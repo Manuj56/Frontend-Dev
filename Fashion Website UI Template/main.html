@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rivo Fashion Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Promo banner styles (integrated) */
+    .promo-container {
+        display: flex;
+        align-items: center;
+        background: #d5f5e3;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 950px;
+        margin: 40px auto;
+        padding: 28px 30px;
+        box-shadow: 0 4px 12px #0001;
+    }
+    .promo-img { flex: 1; position: relative; }
+    .promo-img img { width: 240px; border-radius: 8px; object-fit: cover; box-shadow: 0 7px 20px #8882; display:block; }
+    .dot-grid { position: absolute; left: 0; bottom: 18px; display: grid; grid-template-columns: repeat(4, 12px); gap: 7px; }
+    .dot-grid span { width: 7px; height: 7px; background: #b0e0c8; border-radius: 50%; display: block; }
+    .promo-content { flex: 2; margin-left: 26px; }
+    .promo-content h2 { color: #21412a; font-size: 1.75rem; margin-top: 0; margin-bottom: 12px; }
+    .promo-content p { color: #122b19; margin-bottom: 18px; font-size: 1rem; max-width: 490px; }
+    .promo-timer { display:flex; margin-bottom: 14px; gap: 12px; }
+    .timer-box { background: #fff; padding: 8px 18px; border-radius: 7px; text-align: center; box-shadow: 0 2px 8px #0001; }
+    .timer-box span { display:block; color:#233926; font-size:1.2rem; font-weight:bold; margin-bottom:2px; }
+    .timer-box small { color:#4b5a4e; font-size:0.85rem; }
+    .buy-now-btn { background: #284c31; color:#fff; padding:10px 28px; font-size:0.95rem; border-radius:7px; border:none; cursor:pointer; font-weight:500; letter-spacing:1px; box-shadow: 0 2px 6px #0001; }
+    .buy-now-btn:hover { background:#112516; }
+
+    @media (max-width:900px){
+      .promo-container{ padding:20px; gap:12px; flex-direction:column; align-items:flex-start; }
+      .promo-img img{ width:100%; max-width:320px; }
+      .promo-content{ margin-left:0; }
+      .promo-content h2{ font-size:1.5rem; }
+    }
+  </style>
+</head>
+<body class="bg-green-100 text-gray-900 font-sans">
+
+  <header class="flex justify-between items-center px-10 py-6">
+    <h1 class="text-2xl font-bold text-green-900">Rivo</h1>
+    <nav class="space-x-8 text-sm font-semibold">
+      <a href="#" class="hover:text-green-700">HOME</a>
+      <a href="#" class="hover:text-green-700">SHOP</a>
+      <a href="#" class="hover:text-green-700">FEATURES</a>
+      <a href="#" class="hover:text-green-700">CONTACT</a>
+    </nav>
+    <div class="flex items-center space-x-4">
+      <button class="relative border border-gray-800 px-4 py-1 rounded-md hover:bg-green-800 hover:text-white transition">
+        LOGIN
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse md:flex-row justify-between items-center px-10 md:px-20 py-16">
+    
+    <!-- Left Content -->
+    <div class="max-w-lg">
+      <h2 class="text-5xl md:text-6xl font-extrabold text-green-900 leading-tight mb-6">
+        Discover and <br> Find Your Own <br> Fashion!
+      </h2>
+      <p class="text-green-800 mb-8 leading-relaxed">
+        Explore our curated collection of stylish clothing and accessories tailored to your unique taste.
+      </p>
+      <button class="bg-green-900 text-white px-6 py-3 rounded-md shadow-lg hover:bg-green-800 transition">
+        EXPLORE NOW
+      </button>
+    </div>
+
+    <!-- Right Image (AI-style clothing image) -->
+    <div class="relative mb-10 md:mb-0">
+      <div class="rounded-3xl w-80 h-96 md:w-[420px] md:h-[500px] shadow-md overflow-hidden">
+        <img
+          src="Mask group.png"
+          alt="AI-generated clothing hero"
+          class="w-full h-full object-cover"
+          onerror="this.onerror=null;this.src='human.jpg';">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Best Selling Section -->
+<section class="bg-white py-20">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold text-green-900 mb-2">Best selling</h2>
+    <a href="#" class="text-green-800 underline hover:text-green-900">
+      Get in on the trend with our curated selection of best-selling styles.
+    </a>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 md:px-20">
+    
+    <!-- Product Card 1 -->
+    <div class="flex flex-col items-center">
+      <div class="rounded-md w-full h-96 overflow-hidden">
+        <img
+          src="pexels-dima-valkov-6211621 1.png"
+          alt="AI clothing product 1"
+          class="w-full h-full object-cover"
+          onerror="this.onerror=null;this.src='human.jpg';">
+      </div>
+      <h3 class="text-lg font-semibold mt-4">Regular Fit Long Sleeve Top</h3>
+      <div class="flex items-center space-x-2 text-gray-700 mt-2">
+        <span>₹3,249</span>
+        <span class="text-yellow-500 font-bold">5.0 ★</span>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="flex flex-col items-center">
+      <div class="rounded-md w-full h-96 overflow-hidden">
+        <img
+          src="pexels-dima-valkov-6211616 (1) 2.png"
+          alt="AI clothing product 2"
+          class="w-full h-full object-cover"
+          onerror="this.onerror=null;this.src='human.jpg';">
+      </div>
+      <h3 class="text-lg font-semibold mt-4">Black Crop Tailored Jacket</h3>
+      <div class="flex items-center space-x-2 text-gray-700 mt-2">
+        <span>₹5,249</span>
+        <span class="text-yellow-500 font-bold">4.9 ★</span>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="flex flex-col items-center">
+      <div class="rounded-md w-full h-96 overflow-hidden">
+        <img
+          src="pexels-dima-valkov-6503007 3.png"
+          alt="AI clothing product 3"
+          class="w-full h-full object-cover"
+          onerror="this.onerror=null;this.src='human.jpg';">
+      </div>
+      <h3 class="text-lg font-semibold mt-4">Textured Sunset Shirt</h3>
+      <div class="flex items-center space-x-2 text-gray-700 mt-2">
+        <span>₹4,169</span>
+        <span class="text-yellow-500 font-bold">5.0 ★</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- See All Button -->
+  <div class="text-center mt-14">
+    <button class="border border-green-900 text-green-900 px-8 py-2 rounded-md hover:bg-green-900 hover:text-white transition">
+      See all →
+    </button>
+  </div>
+</section>
+
+<!-- Inserted: Our Products full-width section -->
+<section style="background:#fff; padding:40px 0;">
+  <div style="max-width:950px;margin:0 auto;padding:20px;">
+    <h2 style="text-align:center;color:#23482d;margin-bottom:20px;font-size:2.5rem;">Our products</h2>
+    <div style="display:flex;justify-content:center;gap:30px;margin-bottom:30px;">
+      <span style="color:#333;font-size:1rem;cursor:pointer;">SALE</span>
+      <span style="color:#23482d;font-weight:bold;border-bottom:2px solid #23482d;padding-bottom:3px;">HOT</span>
+      <span style="color:#333;font-size:1rem;cursor:pointer;">NEW ARRIVALS</span>
+      <span style="color:#333;font-size:1rem;cursor:pointer;">ACCESSORIES</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:30px;">
+      <div style="background:#fafafa;border-radius:10px;box-shadow:0 1px 5px rgba(0,0,0,0.05);display:flex;flex-direction:column;align-items:center;padding:18px 10px;">
+        <img src="1.png" alt="Spread Collar Shirt" style="width:140px;height:160px;object-fit:cover;border-radius:8px;background:#dedede;">
+        <h3 style="margin:8px 0 3px 0;font-size:1.1rem;color:#23482d;">Spread Collar Shirt</h3>
+        <div style="font-size:1rem;color:#555;">$48.99 <span style="color:#ffc700;margin-left:7px;">5.0 <i class="fas fa-star"></i></span></div>
+      </div>
+
+      <div style="background:#fafafa;border-radius:10px;box-shadow:0 1px 5px rgba(0,0,0,0.05);display:flex;flex-direction:column;align-items:center;padding:18px 10px;">
+        <img src="2.png" alt="White Solid Formal Shirt" style="width:140px;height:160px;object-fit:cover;border-radius:8px;background:#dedede;">
+        <h3 style="margin:8px 0 3px 0;font-size:1.1rem;color:#23482d;">White Solid Formal Shirt</h3>
+        <div style="font-size:1rem;color:#555;">$39.00 <span style="color:#ffc700;margin-left:7px;">4.9 <i class="fas fa-star"></i></span></div>
+      </div>
+
+      <div style="background:#fafafa;border-radius:10px;box-shadow:0 1px 5px rgba(0,0,0,0.05);display:flex;flex-direction:column;align-items:center;padding:18px 10px;">
+        <img src="3.png" alt="Shine On Me Blouse" style="width:140px;height:160px;object-fit:cover;border-radius:8px;background:#dedede;">
+        <h3 style="margin:8px 0 3px 0;font-size:1.1rem;color:#23482d;">Shine On Me Blouse</h3>
+        <div style="font-size:1rem;color:#555;">$42.99 <span style="color:#ffc700;margin-left:7px;">4.8 <i class="fas fa-star"></i></span></div>
+      </div>
+
+      <div style="background:#fafafa;border-radius:10px;box-shadow:0 1px 5px rgba(0,0,0,0.05);display:flex;flex-direction:column;align-items:center;padding:18px 10px;">
+        <img src="4.png" alt="Gray Solid Padded Jacket" style="width:140px;height:160px;object-fit:cover;border-radius:8px;background:#dedede;">
+        <h3 style="margin:8px 0 3px 0;font-size:1.1rem;color:#23482d;">Gray Solid Padded Jacket</h3>
+        <div style="font-size:1rem;color:#555;">$32.99 <span style="color:#ffc700;margin-left:7px;">4.7 <i class="fas fa-star"></i></span></div>
+      </div>
+
+      <div style="background:#fafafa;border-radius:10px;box-shadow:0 1px 5px rgba(0,0,0,0.05);display:flex;flex-direction:column;align-items:center;padding:18px 10px;">
+        <img src="5.png" alt="Printed Loose T-shirt" style="width:140px;height:160px;object-fit:cover;border-radius:8px;background:#dedede;">
+        <h3 style="margin:8px 0 3px 0;font-size:1.1rem;color:#23482d;">Printed Loose T-shirt</h3>
+        <div style="font-size:1rem;color:#555;">$39.99 <span style="color:#ffc700;margin-left:7px;">5.0 <i class="fas fa-star"></i></span></div>
+      </div>
+
+      <div style="background:#fafafa;border-radius:10px;box-shadow:0 1px 5px rgba(0,0,0,0.05);display:flex;flex-direction:column;align-items:center;padding:18px 10px;">
+        <img src="6.png" alt="Summer Wind Crop Shirt" style="width:140px;height:160px;object-fit:cover;border-radius:8px;background:#dedede;">
+        <h3 style="margin:8px 0 3px 0;font-size:1.1rem;color:#23482d;">Summer Wind Crop Shirt</h3>
+        <div style="font-size:1rem;color:#555;">$39.95 <span style="color:#ffc700;margin-left:7px;">4.7 <i class="fas fa-star"></i></span></div>
+      </div>
+
+      <div style="background:#fafafa;border-radius:10px;box-shadow:0 1px 5px rgba(0,0,0,0.05);display:flex;flex-direction:column;align-items:center;padding:18px 10px;">
+        <img src="7.png" alt="Tailored Jacket" style="width:140px;height:160px;object-fit:cover;border-radius:8px;background:#dedede;">
+        <h3 style="margin:8px 0 3px 0;font-size:1.1rem;color:#23482d;">Tailored Jacket</h3>
+        <div style="font-size:1rem;color:#555;">$46.00 <span style="color:#ffc700;margin-left:7px;">4.9 <i class="fas fa-star"></i></span></div>
+      </div>
+
+      <div style="background:#fafafa;border-radius:10px;box-shadow:0 1px 5px rgba(0,0,0,0.05);display:flex;flex-direction:column;align-items:center;padding:18px 10px;">
+        <img src="8.png" alt="Solid Round Neck T-shirt" style="width:140px;height:160px;object-fit:cover;border-radius:8px;background:#dedede;">
+        <h3 style="margin:8px 0 3px 0;font-size:1.1rem;color:#23482d;">Solid Round Neck T-shirt</h3>
+        <div style="font-size:1rem;color:#555;">$36.00 <span style="color:#ffc700;margin-left:7px;">5.0 <i class="fas fa-star"></i></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End inserted products -->
+
+  <!-- Promo Banner Section (Integrated) -->
+  <section class="promo-container" id="promo">
+    <div class="promo-img">
+      <img src="excited-white-girl-bright-stylish-glasses-posing-pink-dreamy-curly-woman-playing-with-her-ginger-hair-laughing 1.png" alt="Fashionable Clothing" class="rounded-lg shadow-lg">
+      <div class="dot-grid">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="promo-content">
+      <h2 class="text-3xl font-extrabold mb-4">Exclusive Offer: Summer Collection!</h2>
+      <p class="text-lg mb-6">Discover our new arrivals and enjoy limited-time discounts on selected items. Refresh your wardrobe with trendy styles.</p>
+      <div class="promo-timer">
+        <div class="timer-box">
+          <span id="hours">12</span>
+          <small>Hours</small>
+        </div>
+        <div class="timer-box">
+          <span id="minutes">34</span>
+          <small>Minutes</small>
+        </div>
+        <div class="timer-box">
+          <span id="seconds">56</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+      <button class="buy-now-btn" id="buyNowBtn">
+        SHOP NOW
+      </button>
+    </div>
+  </section>
+  <!-- End Promo Banner -->
+
+  <script>
+    // countdown setup: target is now + the initial values shown (12h 34m 56s)
+    (function(){
+      const hoursEl = document.getElementById('hours');
+      const minutesEl = document.getElementById('minutes');
+      const secondsEl = document.getElementById('seconds');
+
+      // parse initial displayed values (fallback if missing)
+      const initialH = parseInt(hoursEl?.textContent || '12', 10);
+      const initialM = parseInt(minutesEl?.textContent || '34', 10);
+      const initialS = parseInt(secondsEl?.textContent || '56', 10);
+
+      // set target time relative to now (so countdown moves)
+      const totalMs = ((initialH * 3600) + (initialM * 60) + initialS) * 1000;
+      let target = Date.now() + totalMs;
+
+      function update() {
+        const now = Date.now();
+        let diff = Math.max(0, target - now);
+
+        const hrs = Math.floor(diff / (1000 * 60 * 60));
+        diff -= hrs * 3600 * 1000;
+        const mins = Math.floor(diff / (1000 * 60));
+        diff -= mins * 60 * 1000;
+        const secs = Math.floor(diff / 1000);
+
+        if (hoursEl) hoursEl.textContent = String(hrs).padStart(2, '0');
+        if (minutesEl) minutesEl.textContent = String(mins).padStart(2, '0');
+        if (secondsEl) secondsEl.textContent = String(secs).padStart(2, '0');
+
+        if (target - now <= 0) {
+          clearInterval(timerInterval);
+          // Optionally, start a new countdown cycle (e.g., reset for another 12h)
+          // target = Date.now() + totalMs; // uncomment to loop
+        }
+      }
+
+      update();
+      const timerInterval = setInterval(update, 1000);
+
+      // Optional: clicking SHOP NOW resets countdown (demo)
+      document.getElementById('buyNowBtn')?.addEventListener('click', function(){
+        target = Date.now() + totalMs;
+      });
+    })();
+  </script>
+</body>
+</html>
