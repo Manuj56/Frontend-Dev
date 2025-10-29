@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Collection — Portfolio · Destination · Team · Articles · More</title>
+  <style>
+    :root{--accent:#00796b;--muted:#f4f4f4;--dark:#222}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,Arial,sans-serif;color:var(--dark);background:#fff;line-height:1.5}
+    header{background:#333;color:#fff;position:sticky;top:0;z-index:10}
+    .container{max-width:1100px;margin:0 auto;padding:1rem}
+    nav{display:flex;gap:1rem;align-items:center}
+    nav a{color:#fff;text-decoration:none;padding:.5rem .75rem;border-radius:6px}
+    nav a:hover{background:rgba(255,255,255,.06)}
+    main{padding:2rem 1rem}
+    section{padding:2rem 0;border-bottom:1px solid #eee}
+    h1,h2,h3{margin-bottom:.5rem}
+    .grid{display:grid;gap:1rem}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+    .card{background:#fff;border:1px solid #eee;padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+    img.responsive{max-width:100%;height:auto;border-radius:8px;display:block}
+    footer{background:#222;color:#fff;padding:1rem;text-align:center}
+    form input,form textarea,form button{width:100%;padding:.75rem;margin:.4rem 0;border:1px solid #ddd;border-radius:6px}
+    form button{background:var(--accent);color:#fff;border:none;cursor:pointer}
+    .row{display:flex;gap:1rem;flex-wrap:wrap}
+    .profile{width:160px;height:160px;border-radius:50%;object-fit:cover}
+    @media(max-width:900px){.cols-3{grid-template-columns:repeat(1,1fr)}.cols-2{grid-template-columns:repeat(1,1fr)}nav{overflow:auto}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div style="display:flex;align-items:center;gap:1rem">
+        <strong>My Collection</strong>
+      </div>
+      <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#destination">Destination</a>
+        <a href="#team">Team</a>
+        <a href="#article">Article</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#magazine">Magazine</a>
+        <a href="#complete">Complete</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="portfolio">
+      <div style="display:flex;gap:1.5rem;align-items:center">
+        <img class="profile" src="https://via.placeholder.com/160" alt="profile">
+        <div>
+          <h1>Manuj Saxena</h1>
+          <p>Frontend developer learning CSS. I build responsive UIs and clean code.</p>
+          <p><a href="#contact" style="color:var(--accent)">Contact me</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="destination">
+      <h2>Visit Coastal City</h2>
+      <nav style="margin:.5rem 0">
+        <a href="#destination">Intro</a> · <a href="#beaches">Beaches</a> · <a href="#food">Food</a> · <a href="#culture">Culture</a>
+      </nav>
+      <div class="grid cols-2" style="margin-top:1rem">
+        <div class="card" id="beaches">
+          <h3>Beaches</h3>
+          <p>Sun, sand, and surf. Perfect for relaxation and water sports.</p>
+        </div>
+        <div class="card" id="food">
+          <h3>Food</h3>
+          <p>Local cuisine and markets offering fresh seafood and street flavors.</p>
+        </div>
+        <div class="card" id="culture">
+          <h3>Culture</h3>
+          <p>Cultural attractions, festivals, and heritage sites to explore.</p>
+        </div>
+        <div class="card" id="intro">
+          <h3>Welcome</h3>
+          <p>Short intro paragraph about the city and travel tips.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <h2>Our Team</h2>
+      <div class="grid cols-3" style="margin-top:1rem">
+        <article class="card lead">
+          <h3>Priya Sharma</h3>
+          <p class="role">Team Lead</p>
+          <p>Leads product and coordinates releases.</p>
+        </article>
+        <article class="card">
+          <h3>Rahul Verma</h3>
+          <p class="role">Frontend Dev</p>
+          <p>Builds UI components and implements designs.</p>
+        </article>
+        <article class="card">
+          <h3>Sana Khan</h3>
+          <p class="role">Designer</p>
+          <p>Designs UI/UX and visual assets.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="article">
+      <h2>The Wonders of Learning CSS</h2>
+      <p style="color:#666;margin-top:.25rem">By Manuj Saxena — Published Oct 29, 2025</p>
+      <article style="margin-top:1rem">
+        <p><strong>Important:</strong> Simplicity and consistent patterns help build maintainable styles.</p>
+        <p>Key phrases can be highlighted to emphasize ideas and improve scannability.</p>
+        <blockquote style="border-left:4px solid #ccc;padding-left:1rem;color:#444">
+          “Learning is not attained by chance, it must be sought for with ardor and diligence.”
+        </blockquote>
+      </article>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing Plans</h2>
+      <div class="grid cols-3" style="margin-top:1rem">
+        <div class="card">
+          <h3>Basic</h3>
+          <ul><li>Feature A</li><li>Feature B</li></ul>
+          <p class="price">₹199</p>
+          <a class="btn" href="#" style="color:var(--accent)">Choose</a>
+        </div>
+        <div class="card">
+          <h3>Standard</h3>
+          <ul><li>Feature A</li><li>Feature B</li><li>Feature C</li></ul>
+          <p class="price">₹399</p>
+          <a class="btn" href="#" style="color:var(--accent)">Popular</a>
+        </div>
+        <div class="card">
+          <h3>Premium</h3>
+          <ul><li>All features</li><li>Priority support</li></ul>
+          <p class="price">₹799</p>
+          <a class="btn" href="#" style="color:var(--accent)">Choose</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="grid cols-3" style="margin-top:1rem">
+        <figure class="card photo"><img class="responsive" src="https://picsum.photos/400/300?1" alt=""><figcaption>Caption 1</figcaption></figure>
+        <figure class="card photo"><img class="responsive" src="https://picsum.photos/400/300?2" alt=""><figcaption>Caption 2</figcaption></figure>
+        <figure class="card photo"><img class="responsive" src="https://picsum.photos/400/300?3" alt=""><figcaption>Caption 3</figcaption></figure>
+        <figure class="card photo"><img class="responsive" src="https://picsum.photos/400/300?4" alt=""><figcaption>Caption 4</figcaption></figure>
+        <figure class="card photo"><img class="responsive" src="https://picsum.photos/400/300?5" alt=""><figcaption>Caption 5</figcaption></figure>
+        <figure class="card photo"><img class="responsive" src="https://picsum.photos/400/300?6" alt=""><figcaption>Caption 6</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form style="max-width:600px;margin-top:1rem">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" rows="6" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section id="dashboard">
+      <h2>Dashboard Preview</h2>
+      <div class="row" style="margin-top:1rem">
+        <aside class="card" style="min-width:220px">
+          <nav style="display:flex;flex-direction:column;gap:.5rem"><a href="#">Overview</a><a href="#">Reports</a><a href="#">Settings</a></nav>
+        </aside>
+        <main class="card" style="flex:1">
+          <div style="display:grid;gap:1rem"><div class="box card">Content Box 1</div><div class="box card">Content Box 2</div></div>
+        </main>
+      </div>
+    </section>
+
+    <section id="magazine">
+      <h2>Daily Gazette</h2>
+      <article class="card" style="margin-top:1rem;column-count:2;column-gap:2rem">
+        <img src="https://picsum.photos/200/200" alt="news" style="float:left;margin:0 .75rem .75rem 0;width:150px;border-radius:8px">
+        <h3>Headline</h3>
+        <p>First paragraph ... Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Second paragraph ... Curabitur non nulla sit amet nisl tempus.</p>
+        <p>Third paragraph ... Sed porttitor lectus nibh.</p>
+      </article>
+    </section>
+
+    <section id="complete">
+      <h2>Complete Layout Snapshot</h2>
+      <div class="card" style="margin-top:1rem">
+        <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+          <div style="flex:1">
+            <h3>About</h3>
+            <p>Passionate web developer combining design and code to create useful products.</p>
+          </div>
+          <div style="width:300px"><img class="responsive" src="https://picsum.photos/400/300" alt="about image"></div>
+        </div>
+
+        <div style="margin-top:1rem">
+          <h3>Services</h3>
+          <div class="row" style="margin-top:.5rem">
+            <div class="card" style="flex:1;min-width:150px">Web Design</div>
+            <div class="card" style="flex:1;min-width:150px">Development</div>
+            <div class="card" style="flex:1;min-width:150px">SEO</div>
+          </div>
+        </div>
+
+        <div style="margin-top:1rem">
+          <h3>Contact Mini</h3>
+          <form style="max-width:400px;margin-top:.5rem;display:flex;flex-direction:column;gap:.5rem">
+            <input placeholder="Name"><input placeholder="Email"><textarea placeholder="Message"></textarea><button>Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2025 Manuj Saxena — All rights reserved
+    </div>
+  </footer>
+</body>
+</html>
