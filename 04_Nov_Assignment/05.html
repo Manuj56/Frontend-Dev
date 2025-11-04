@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Button Collection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      gap: 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    /* Primary button */
+    .primary {
+      background-color: #007bff;
+      color: white;
+    }
+    .primary:hover {
+      background-color: #0062cc;
+      transform: scale(1.05);
+    }
+
+    /* Secondary button */
+    .secondary {
+      background-color: #6c757d;
+      color: white;
+    }
+    .secondary:hover {
+      background-color: #5a6268;
+      transform: scale(1.05);
+    }
+
+    /* Outline button */
+    .outline {
+      background: transparent;
+      border: 2px solid #00bcd4;
+      color: #00bcd4;
+    }
+    .outline:hover {
+      background-color: #00bcd4;
+      color: #111;
+    }
+
+    /* Disabled button */
+    button:disabled {
+      background-color: #444;
+      color: #999;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    /* Focus effect */
+    button:focus {
+      outline: 2px solid #fff;
+    }
+  </style>
+</head>
+<body>
+  <h2>Styled Button Collection</h2>
+  <div class="button-container">
+    <button class="primary">Primary</button>
+    <button class="secondary">Secondary</button>
+    <button class="outline">Outline</button>
+    <button disabled>Disabled</button>
+  </div>
+</body>
+</html>

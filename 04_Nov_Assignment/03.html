@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Showcase Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+
+    /* Grid container */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    figure {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      cursor: pointer;
+      background-color: #222;
+      transition: transform 0.3s ease;
+    }
+
+    figure img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    figure::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0);
+      transition: background 0.3s ease;
+      border-radius: 12px;
+    }
+
+    figure:hover img {
+      transform: scale(1.1);
+    }
+
+    figure:hover::after {
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    figcaption {
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #1a1a1a;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 700px) {
+      body {
+        padding: 20px;
+      }
+      figure img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Image Showcase Layout</h2>
+
+  <div class="gallery">
+    <figure>
+      <img src="https://picsum.photos/id/1011/400/300" alt="Mountain">
+      <figcaption>Majestic Mountain</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/id/1025/400/300" alt="Dog">
+      <figcaption>Friendly Dog</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/id/1043/400/300" alt="Forest">
+      <figcaption>Calm Forest</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/id/1059/400/300" alt="River">
+      <figcaption>Flowing River</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/id/1069/400/300" alt="Beach">
+      <figcaption>Sunny Beach</figcaption>
+    </figure>
+    <figure>
+      <img src="https://picsum.photos/id/1074/400/300" alt="City">
+      <figcaption>Modern City</figcaption>
+    </figure>
+  </div>
+</body>
+</html>

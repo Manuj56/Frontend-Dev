@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-Classes Demonstration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .box {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .box h3 {
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    /* Link pseudo-classes */
+    a:link {
+      color: blue;
+      text-decoration: none;
+    }
+    a:visited {
+      color: purple;
+    }
+    a:hover {
+      color: white;
+      background-color: blue;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+    a:active {
+      background-color: darkblue;
+      color: white;
+    }
+
+    /* Input focus */
+    input[type="text"] {
+      padding: 8px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    input[type="text"]:focus {
+      border-color: dodgerblue;
+      box-shadow: 0 0 5px dodgerblue;
+    }
+
+    /* Button pseudo-classes */
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    button:active {
+      transform: scale(0.95);
+      background-color: #1e7e34;
+    }
+
+    /* nth-child example */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 8px;
+      margin: 5px 0;
+      background-color: #ddd;
+      border-radius: 5px;
+    }
+    ul li:nth-child(odd) {
+      background-color: #bbb;
+    }
+    ul li:nth-child(even) {
+      background-color: #999;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2>Pseudo-Class Demonstration</h2>
+
+  <div class="container">
+    <!-- Hover & Active Example -->
+    <div class="box">
+      <h3>:hover & :active</h3>
+      <p>Hover or click the link below to see color changes.</p>
+      <a href="https://www.google.com" target="_blank">Visit Google</a>
+    </div>
+
+    <!-- Focus Example -->
+    <div class="box">
+      <h3>:focus</h3>
+      <p>Click inside the input box to see focus effect.</p>
+      <input type="text" placeholder="Focus on me">
+    </div>
+
+    <!-- Button Example -->
+    <div class="box">
+      <h3>:hover & :active</h3>
+      <p>Hover and click the button to see its states.</p>
+      <button>Click Me</button>
+    </div>
+
+    <!-- nth-child Example -->
+    <div class="box">
+      <h3>:nth-child()</h3>
+      <p>Alternate colors using nth-child selector.</p>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

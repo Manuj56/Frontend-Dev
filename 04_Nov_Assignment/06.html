@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Demo</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      gap: 30px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+
+    /* Animation 1 - Moving Box */
+    .move {
+      width: 80px;
+      height: 80px;
+      background: #ff4757;
+      border-radius: 10px;
+      animation: slide 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes slide {
+      from { transform: translateX(0); }
+      to { transform: translateX(150px); }
+    }
+
+    /* Animation 2 - Bouncing Ball */
+    .bounce {
+      width: 60px;
+      height: 60px;
+      background: #1e90ff;
+      border-radius: 50%;
+      animation: bounce 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-100px); }
+    }
+
+    /* Animation 3 - Color Changing Text */
+    .color-text {
+      font-size: 24px;
+      animation: colorChange 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes colorChange {
+      0% { color: #ff9f43; }
+      50% { color: #00cec9; }
+      100% { color: #a29bfe; }
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Animation Demonstration</h2>
+  <div class="container">
+    <div class="move"></div>
+    <div class="bounce"></div>
+    <div class="color-text">Animated Text</div>
+  </div>
+</body>
+</html>

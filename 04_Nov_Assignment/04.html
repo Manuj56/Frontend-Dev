@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Practice Page</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      background-color: #fff3cd;
+      border-left: 5px solid #ffc107;
+      padding: 10px;
+    }
+
+    #special {
+      color: #007BFF;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    a[target="_blank"] {
+      color: #28a745;
+      text-decoration: none;
+    }
+
+    a[target="_blank"]:hover {
+      text-decoration: underline;
+    }
+
+    div em {
+      color: #d63384;
+    }
+
+    .list-demo > li {
+      color: #ff5722;
+    }
+
+    h3 + p {
+      font-style: italic;
+      color: #6f42c1;
+    }
+
+    h4 ~ p {
+      color: #17a2b8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Practice Page</h1>
+    <p>Learn how different CSS selectors target elements</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Element Selector</h2>
+      <p>This paragraph is styled using a simple <strong>element selector</strong>.</p>
+      <p>All paragraphs on this page share the same base styling.</p>
+    </section>
+
+    <section>
+      <h2>2. Class Selector</h2>
+      <p class="highlight">This paragraph uses the <code>.highlight</code> class to stand out.</p>
+      <p class="highlight">You can apply the same class to multiple elements.</p>
+    </section>
+
+    <section>
+      <h2>3. ID Selector</h2>
+      <p id="special">This unique paragraph uses the <code>#special</code> ID selector.</p>
+    </section>
+
+    <section>
+      <h2>4. Attribute Selector</h2>
+      <p>Example link with attribute selector:</p>
+      <a href="https://www.google.com" target="_blank">Visit Google (opens in new tab)</a>
+    </section>
+
+    <section>
+      <h2>5. Combinator Selectors</h2>
+      <div>
+        <p>This is a <em>descendant selector</em> example inside a div.</p>
+      </div>
+
+      <ul class="list-demo">
+        <li>First item (direct child)</li>
+        <li>Second item (direct child)</li>
+        <ul>
+          <li>Nested item (not direct child)</li>
+        </ul>
+      </ul>
+
+      <h3>Heading 3 Example</h3>
+      <p>This paragraph appears right after an h3, so it's styled using <code>h3 + p</code>.</p>
+
+      <h4>Heading 4 Example</h4>
+      <p>All paragraphs after this heading use <code>h4 ~ p</code>.</p>
+      <p>Another paragraph affected by the general sibling selector.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for CSS Selector Practice | © 2025</p>
+  </footer>
+</body>
+</html>

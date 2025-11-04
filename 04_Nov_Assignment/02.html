@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Tooltip Demonstration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f4f4f4;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      font-size: 22px;
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .tooltip:hover {
+      background-color: #333;
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      opacity: 0;
+      width: 180px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 8px;
+      border-radius: 6px;
+      position: absolute;
+      bottom: 125%; /* Position above element */
+      left: 50%;
+      transform: translateX(-50%);
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      z-index: 1;
+    }
+
+    /* Tooltip arrow */
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    /* Show tooltip on hover */
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tooltip">
+      💡
+      <span class="tooltiptext">This is a light bulb icon tooltip!</span>
+    </div>
+
+    <div class="tooltip">
+      📞
+      <span class="tooltiptext">Contact us anytime!</span>
+    </div>
+
+    <div class="tooltip">
+      🔒
+      <span class="tooltiptext">Your data is safe here.</span>
+    </div>
+
+    <div class="tooltip">
+      <span style="font-weight:bold;">Hover Me</span>
+      <span class="tooltiptext">Simple text tooltip example.</span>
+    </div>
+  </div>
+</body>
+</html>
