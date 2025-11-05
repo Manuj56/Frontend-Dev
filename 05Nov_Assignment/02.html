@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Web Design Layout</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:sans-serif;line-height:1.6;}
+  header,footer{background:#333;color:#fff;padding:1rem;}
+  header{display:flex;justify-content:space-between;align-items:center;}
+  nav a{color:white;margin-left:1rem;text-decoration:none;}
+  main{display:flex;gap:1rem;padding:1rem;}
+  .box{
+    flex:1;
+    background:#f2f2f2;
+    padding:2rem;
+    text-align:center;
+    transition:transform 0.3s ease;
+  }
+  .box:hover{transform:scale(1.05);}
+  footer{text-align:center;}
+  @media(max-width:750px){
+    main{flex-direction:column;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>MyLogo</h1>
+  <nav><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></nav>
+</header>
+<main>
+  <section class="box">Feature 1</section>
+  <section class="box">Feature 2</section>
+  <section class="box">Feature 3</section>
+</main>
+<footer>© 2025 Responsive Layout Demo</footer>
+</body>
+</html>

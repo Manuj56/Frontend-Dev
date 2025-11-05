@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filter Cards with Animation</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;background:#fafafa;animation:fadein 1s ease;}
+  @keyframes fadein{from{opacity:0;}to{opacity:1;}}
+  .cards{display:flex;gap:1rem;flex-wrap:wrap;}
+  .card{
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+    border-radius:8px;
+    overflow:hidden;
+    width:250px;
+    text-align:center;
+    transition:transform .3s;
+  }
+  img{width:100%;filter:grayscale(100%);transition:filter .3s;}
+  .card:hover img{filter:none;}
+  .card:hover{transform:translateY(-10px);}
+  @media(max-width:800px){
+    .cards{flex-direction:column;align-items:center;}
+  }
+</style>
+</head>
+<body>
+<main class="cards">
+  <div class="card"><img src="https://picsum.photos/id/1005/300/200"><h3>John Doe</h3></div>
+  <div class="card"><img src="https://picsum.photos/id/1010/300/200"><h3>Jane Smith</h3></div>
+  <div class="card"><img src="https://picsum.photos/id/1011/300/200"><h3>Alex Brown</h3></div>
+</main>
+</body>
+</html>

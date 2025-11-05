@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Dashboard Summary</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:sans-serif;animation:fadein 1s ease;}
+  @keyframes fadein{from{opacity:0;}to{opacity:1;}}
+  .grid{
+    display:grid;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    grid-template-columns:200px 1fr;
+    grid-template-rows:auto 1fr auto;
+    height:100vh;
+  }
+  header{grid-area:header;background:#333;color:#fff;padding:1rem;text-align:center;}
+  aside{grid-area:sidebar;background:#f4f4f4;padding:1rem;}
+  main{grid-area:main;padding:1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+  footer{grid-area:footer;background:#333;color:#fff;text-align:center;padding:1rem;}
+  .card{
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    padding:1rem;
+    transition:transform .3s,box-shadow .3s;
+  }
+  .card:hover{transform:scale(1.05);box-shadow:0 4px 10px rgba(0,0,0,0.2);}
+  @media(max-width:750px){
+    .grid{
+      grid-template-areas:
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+      grid-template-columns:1fr;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="grid">
+  <header><h1>Responsive Dashboard</h1></header>
+  <aside><h3>Sidebar</h3><p>Navigation</p></aside>
+  <main>
+    <div class="card"><h4>Filters</h4><p>CSS filter effects</p></div>
+    <div class="card"><h4>Typography</h4><p>Scaling text with clamp()</p></div>
+    <div class="card"><h4>Media Queries</h4><p>Responsive breakpoints</p></div>
+    <div class="card"><h4>Cheat Sheet Links</h4><p>Quick references</p></div>
+  </main>
+  <footer>© 2025 Dashboard Example</footer>
+</div>
+</body>
+</html>

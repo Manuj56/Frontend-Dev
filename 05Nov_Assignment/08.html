@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filter Comparison Layout</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:sans-serif;padding:2rem;}
+  .comparison{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+  }
+  figure{flex:1;text-align:center;}
+  img{width:100%;transition:filter .5s;}
+  .after img{filter:brightness(0.6);}
+  figure:hover img{filter:none;}
+  @media(max-width:700px){
+    .comparison{flex-direction:column;}
+  }
+</style>
+</head>
+<body>
+<main class="comparison">
+  <figure class="before"><img src="https://picsum.photos/id/1050/400/300"><figcaption>Before</figcaption></figure>
+  <figure class="after"><img src="https://picsum.photos/id/1050/400/300"><figcaption>After (Brightness)</figcaption></figure>
+</main>
+</body>
+</html>

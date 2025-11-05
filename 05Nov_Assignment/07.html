@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combined Responsive Web Demo</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:sans-serif;animation:fadein 1s ease;}
+  @keyframes fadein{from{opacity:0;}to{opacity:1;}}
+  header,footer{background:#333;color:#fff;padding:1rem;text-align:center;}
+  nav{display:flex;justify-content:center;gap:1rem;}
+  nav a{color:#fff;text-decoration:none;}
+  main{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:1rem;
+    padding:1rem;
+  }
+  section{
+    background:#f0f0f0;
+    padding:1rem;
+    transition:transform .3s;
+  }
+  section:hover{transform:translateY(-5px);}
+  footer{margin-top:1rem;}
+  @media(max-width:700px){
+    main{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Responsive Web Demo</h1>
+  <nav><a href="#">Home</a><a href="#">Gallery</a><a href="#">Contact</a></nav>
+</header>
+<main>
+  <section><h2>Image Gallery</h2><p>Responsive grid gallery using filters.</p></section>
+  <section><h2>Responsive Design</h2><p>Explains concepts like flexible layouts and media queries.</p></section>
+  <section><h2>Cheat Sheet Preview</h2><p>Quick summary of CSS responsiveness techniques.</p></section>
+</main>
+<footer>Contact: demo@example.com</footer>
+</body>
+</html>
