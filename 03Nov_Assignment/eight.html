@@ -10,8 +10,6 @@
             background-color: #f4f4f4;
             margin: 0;
         }
-
-        /* Flex container to center the demonstration */
         .container {
             display: flex;
             justify-content: center;
@@ -21,60 +19,31 @@
             flex-wrap: wrap;
             text-align: center;
         }
-
-        /* Base styles for the visual box */
         .box {
-            /*
-              These properties are applied to BOTH boxes.
-              - Width: 200px
-              - Padding: 20px (left) + 20px (right) = 40px
-              - Border: 5px (left) + 5px (right) = 10px
-              - Margin: 30px (left) + 30px (right) = 60px
-            */
             width: 200px;
             height: 200px;
             padding: 20px;
-            border: 5px solid #e74c3c; /* Border (Red) */
+            border: 5px solid #e74c3c; 
             margin: 30px;
-            
-            /* Using background-clip to show layers */
-            /* This color will show in the margin area */
-            background-color: #f39c12; /* Margin area color (Orange) */
-            
-            /* This clips the background, making the padding area transparent
-               and showing the orange margin color underneath */
+            background-color: #f39c12; 
             background-clip: padding-box;
         }
 
         .content {
-            background-color: #3498db; /* Content area (Blue) */
+            background-color: #3498db; 
             color: white;
-            height: 100%; /* Fill the content area */
+            height: 100%; 
             display: flex;
             justify-content: center;
             align-items: center;
             font-weight: bold;
         }
-
-        /* --- Box Sizing Demonstration --- */
-
-        /* 1. Default (box-sizing: content-box) */
-        /* This is the default browser behavior */
         .default-box {
             box-sizing: content-box;
-            /* Final rendered width = width + padding + border
-               = 200px + 40px + 10px = 250px
-            */
         }
 
-        /* 2. Border-Box */
         .border-box {
             box-sizing: border-box;
-            /* Final rendered width = width
-               = 200px
-               The padding and border are pushed *inside* this 200px width.
-               The content area will shrink to make room.
-            */
         }
     </style>
 </head>
