@@ -13,110 +13,66 @@
         main {
             display: flex;
             gap: 2rem;
-            flex-wrap: wrap; /* Allow wrapping */
+            flex-wrap: wrap; 
         }
         div {
             flex: 1;
             min-width: 300px;
         }
-
-        /* --- 1. Combinator Selectors --- */
-
-        /* Descendant Combinator (space) */
-        /* Selects any 'p' inside '.descendant' */
         .descendant div p {
-            color: #007bff; /* Blue */
+            color: #blue;
         }
-
-        /* Child Combinator (>) */
-        /* Selects only 'li' that are direct children of 'ul' */
         .child ul > li {
             font-weight: bold;
         }
-
-        /* Adjacent Sibling Combinator (+) */
-        /* Selects the 'p' immediately following an 'h4' */
         .adjacent h4 + p {
             font-style: italic;
-            color: #d9534f; /* Red */
+            color: #d9534f; 
         }
-
-        /* General Ssibling Combinator (~) */
-        /* Selects all 'p' elements that follow 'h5' (and are siblings) */
         .general h5 ~ p {
             background-color: #f0f0f0;
         }
-
-
-        /* --- 2. Pseudo-Class Selectors --- */
-
-        /* :hover - applies when mousing over */
         .pseudo-class a:hover {
             color: white;
             background-color: #333;
         }
-
-        /* :focus - applies when an element (like input) is selected */
         .pseudo-class input:focus {
             border-color: #007bff;
             box-shadow: 0 0 5px rgba(0,123,255,0.5);
             outline: none;
         }
-
-        /* :nth-child() - selects elements based on their position */
         .pseudo-class ol li:nth-child(odd) {
-            background-color: #e9f5ff; /* Light blue */
+            background-color: #e9f5ff; 
         }
         .pseudo-class ol li:nth-child(even) {
-            background-color: #fff8e9; /* Light yellow */
+            background-color: #fff8e9; 
         }
-
-
-        /* --- 3. Pseudo-Element Selectors --- */
-
-        /* ::before - inserts content before the element */
         .attribute a[href^="https"]::before {
-            content: "🔒 "; /* Adds a lock emoji */
+            content: "🔒 "; 
         }
-
-        /* ::after - inserts content after the element */
         .attribute a[href^="http"]::after {
             content: " (insecure)";
             color: red;
             font-size: 0.8em;
         }
-
-        /* ::first-letter - styles the first letter */
         .intro::first-letter {
             font-size: 2.5em;
             font-weight: bold;
             float: left;
             padding-right: 5px;
-            color: #5cb85c; /* Green */
+            color: #Green;
         }
-
-        /* ::first-line - styles the first line of text */
         .intro::first-line {
             font-weight: bold;
         }
-
-
-        /* --- 4. Attribute Selectors --- */
-
-        /* Selects 'a' tags whose 'href' attribute starts with "https" */
         [href^="https"] {
-            color: #5cb85c; /* Green */
-        }
-
-        /* Selects 'input' tags with an attribute 'type="text"' */
+            color: #5cb85c; 
         [type="text"] {
             border: 2px solid #ccc;
             border-radius: 4px;
         }
-
-        /* Selects 'input' tags with 'type="button"' */
         [type="button"] {
-            background-color: #f0ad4e; /* Orange */
+            background-color: #f0ad4e; 
             border: none;
             padding: 5px 10px;
         }
