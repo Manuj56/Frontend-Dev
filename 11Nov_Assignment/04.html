@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Marks Analyzer</title>
+<style>
+body {font-family: Arial, sans-serif;}
+</style>
+</head>
+<body>
+<script>
+let marks = [92, 81, 67, 45, 38];
+let total = 0, fails = 0;
+for (let m of marks) { total += m; if (m < 40) fails++; }
+let avg = total / marks.length;
+let grade = avg >= 90 ? "A+" : avg >= 75 ? "A" : avg >= 60 ? "B" : avg >= 40 ? "C" : "Fail";
+console.log("Average: " + avg.toFixed(2));
+console.log("Grade: " + grade);
+if (fails >= 2) console.log("Repeat Year");
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Bonus Distribution</title>
+<style>
+body {font-family: Arial, sans-serif;}
+</style>
+</head>
+<body>
+<script>
+let base = 125000, rating = 4, exp = 6;
+let bonus = rating===5?0.20:rating===4?0.15:rating===3?0.10:0;
+if (exp>5) bonus+=0.05;
+let calc = base*bonus;
+let finalBonus = base>100000?Math.min(calc,25000):calc;
+let total = base+finalBonus;
+console.log("Calculated Bonus: ₹" + calc.toFixed(2));
+console.log("Final Bonus: ₹" + finalBonus.toFixed(2));
+console.log("Total Salary: ₹" + total.toFixed(2));
+</script>
+</body>
+</html>

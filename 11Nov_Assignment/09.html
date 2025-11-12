@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Library Fine Calculator</title>
+<style>
+body {font-family: Arial, sans-serif;}
+</style>
+</head>
+<body>
+<script>
+let delays=[2,8,0,12,4,6];
+let total=0, late=0;
+for(let d of delays){
+  if(d>0) late++;
+  if(d<=5&&d>0) total+=d*10;
+  else if(d<=10) total+=d*20;
+  else if(d>10) total+=d*50;
+}
+if(late>3) total+=200;
+console.log("Delayed Returns:", late);
+console.log("Total Fine: ₹" + total);
+</script>
+</body>
+</html>

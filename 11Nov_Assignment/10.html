@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Random Coupon Generator</title>
+<style>
+body {font-family: Arial, sans-serif;}
+</style>
+</head>
+<body>
+<script>
+function isPrime(n){if(n<2)return false;for(let i=2;i<=Math.sqrt(n);i++)if(n%i===0)return false;return true;}
+let n=Math.floor(Math.random()*100)+1;
+let msg=n<=30?"You won a 10% discount":n<=60?"You won a 20% discount":n<=90?"You won a 30% discount":"You won a 50% Mega Offer!";
+console.log("Coupon Number:",n);
+console.log(msg);
+if(isPrime(n)) console.log("Prime number bonus applied");
+</script>
+</body>
+</html>

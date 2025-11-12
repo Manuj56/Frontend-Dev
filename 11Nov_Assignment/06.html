@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Game Reward System</title>
+<style>
+body {font-family: Arial, sans-serif;}
+</style>
+</head>
+<body>
+<script>
+let level = 10, score = 70, missionsCompleted = true;
+let coins = level * 50 + score * 10;
+if (missionsCompleted) coins *= 2;
+let rank = coins > 1000 ? "Elite" : "Regular";
+console.log("Level:", level);
+console.log("Score:", score);
+console.log("Coins:", coins);
+console.log("Rank:", rank);
+</script>
+</body>
+</html>
