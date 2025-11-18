@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; padding:20px; background:#fafafa; color:#111; }
+.container { max-width:720px; margin:0 auto; background:#fff; padding:18px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+h2 { margin-top:0; }
+button { padding:8px 12px; margin:6px 0; cursor:pointer; }
+output, pre { display:block; background:#f4f6f8; padding:10px; border-radius:6px; white-space:pre-wrap; margin-top:8px; }
+input, textarea { padding:8px; width:100%; box-sizing:border-box; margin:6px 0; }
