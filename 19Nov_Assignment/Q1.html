@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q1 - Product List Manager</title>
+<style>
+body { font-family: Arial; padding: 20px; background:#f7f7f7; }
+.container { max-width:600px; margin:0 auto; background:white; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+input[type="text"] { width:70%; padding:8px; }
+button { padding:8px 10px; margin-left:8px; }
+ul { list-style:none; padding:0; margin-top:20px; }
+li { padding:8px; border-bottom:1px solid #eee; display:flex; justify-content:space-between; align-items:center; }
+.editable { flex:1; margin-right:10px; }
+.actions button { margin-left:6px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Product List Manager</h2>
+  <div>
+    <input id="productInput" type="text" placeholder="Add product name" />
+    <button id="addBtn">Add</button>
+  </div>
+  <ul id="productList"></ul>
+</div>
+<script src="Q1.js"></script>
+</body>
+</html>
