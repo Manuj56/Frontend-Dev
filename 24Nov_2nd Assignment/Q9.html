@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q9 Multi jQuery Widgets</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        var jq1 = jQuery.noConflict(true);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        var jq2 = jQuery.noConflict(true);
+    </script>
+    <script src="q9.js"></script>
+   <style>
+    body {
+        background: #f5f6fa;
+        padding: 30px;
+        font-family: Arial;
+    }
+
+    #carousel {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .slide {
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .widget {
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        margin: 10px 0;
+        cursor: pointer;
+    }
+
+    .active-widget {
+        background: #ffeaa7;
+    }
+
+    #modal {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .tooltip {
+        background: black;
+        padding: 5px 8px;
+        border-radius: 4px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Dashboard</h1>
+</header>
+<main>
+    <section>
+        <h2>Carousel (jQuery v1)</h2>
+        <div id="carousel">
+            <div class="slide active-slide">Slide 1 Content</div>
+            <div class="slide">Slide 2 Content</div>
+            <div class="slide">Slide 3 Content</div>
+        </div>
+    </section>
+    <section>
+        <h2>Widgets</h2>
+        <div class="widget" data-id="1">Widget 1</div>
+        <div class="widget" data-id="2">Widget 2</div>
+        <div class="widget" data-id="3">Widget 3</div>
+    </section>
+    <section>
+        <h2>Notifications (Modal using jQuery v2)</h2>
+        <button id="openModalBtn">Open Notification</button>
+        <div id="modalOverlay">
+            <div id="modal">
+                <p>New Notification</p>
+                <button id="closeModalBtn">Close</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Tooltip Targets (jQuery v2)</h2>
+        <p class="tooltip-target" data-tooltip="First info">Hover over this text 1</p>
+        <p class="tooltip-target" data-tooltip="Second info">Hover over this text 2</p>
+        <p class="tooltip-target" data-tooltip="Third info">Hover over this text 3</p>
+        <div id="tooltipBox" class="tooltip"></div>
+    </section>
+</main>
+</body>
+</html>

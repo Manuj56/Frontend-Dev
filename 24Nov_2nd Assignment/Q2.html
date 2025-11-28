@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q2 Product Highlight</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q2.js"></script>
+    <style>
+    body {
+        font-family: "Segoe UI", sans-serif;
+        padding: 25px;
+        background: #f0f2f5;
+    }
+
+    .product-list {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        background: #fff;
+        padding: 15px;
+        width: 170px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .product:hover {
+        transform: translateY(-3px);
+    }
+
+    .highlighted {
+        background: #ffeaa7;
+    }
+
+    .discounted {
+        border: 2px solid #55efc4;
+    }
+
+    .favorite-icon {
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 5px;
+        color: #636e72;
+    }
+
+    .favorite-icon.selected {
+        color: red;
+    }
+
+    .details {
+        background: #f1f2f6;
+        padding: 5px;
+        border-radius: 5px;
+    }
+</style>
+
+</head>
+<body>
+<header>
+    <h1>Products</h1>
+</header>
+<main>
+    <section class="product-list">
+        <article class="product" data-stock="out" data-discount="true">
+            <h2>Product 1</h2>
+            <p>Basic Item</p>
+            <div class="details">Extra details for Product 1</div>
+            <span class="favorite-icon">❤</span>
+        </article>
+        <article class="product" data-stock="in" data-discount="true">
+            <h2>Product 2</h2>
+            <p>Discounted Item</p>
+            <div class="details">Extra details for Product 2</div>
+            <span class="favorite-icon">❤</span>
+        </article>
+        <article class="product" data-stock="in">
+            <h2>Product 3</h2>
+            <p>Popular Item</p>
+            <div class="details">Extra details for Product 3</div>
+            <span class="favorite-icon">❤</span>
+        </article>
+        <article class="product" data-stock="out">
+            <h2>Product 4</h2>
+            <p>Limited Item</p>
+            <div class="details">Extra details for Product 4</div>
+            <span class="favorite-icon">❤</span>
+        </article>
+        <article class="product" data-stock="in" data-discount="true">
+            <h2>Product 5</h2>
+            <p>Premium Item</p>
+            <div class="details">Extra details for Product 5</div>
+            <span class="favorite-icon">❤</span>
+        </article>
+    </section>
+</main>
+</body>
+</html>

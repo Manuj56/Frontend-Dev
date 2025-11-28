@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q6 Event Subscription Panel</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q6.js"></script>
+   <style>
+    body {
+        background: #f5f6fa;
+        padding: 30px;
+        font-family: Arial;
+    }
+
+    .topic {
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    button {
+        padding: 8px 14px;
+        border: none;
+        border-radius: 6px;
+        background: #0984e3;
+        color: #fff;
+    }
+
+    #message {
+        margin-top: 20px;
+        font-weight: bold;
+        color: #2d3436;
+    }
+
+    input {
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-top: 15px;
+    }
+</style>
+
+</head>
+<body>
+<header>
+    <h1>Subscription Panel</h1>
+</header>
+<main>
+    <section>
+        <div id="topics">
+            <div class="topic" data-name="Music">
+                <span>Music Events</span>
+                <button class="subscribeBtn">Subscribe</button>
+                <button class="unsubscribeBtn">Unsubscribe</button>
+            </div>
+            <div class="topic" data-name="Sports">
+                <span>Sports Events</span>
+                <button class="subscribeBtn">Subscribe</button>
+                <button class="unsubscribeBtn">Unsubscribe</button>
+            </div>
+            <div class="topic" data-name="Tech">
+                <span>Tech Events</span>
+                <button class="subscribeBtn">Subscribe</button>
+                <button class="unsubscribeBtn">Unsubscribe</button>
+            </div>
+            <div class="topic" data-name="Workshops">
+                <span>Workshops</span>
+                <button class="subscribeBtn">Subscribe</button>
+                <button class="unsubscribeBtn">Unsubscribe</button>
+            </div>
+            <div class="topic" data-name="Webinars">
+                <span>Webinars</span>
+                <button class="subscribeBtn">Subscribe</button>
+                <button class="unsubscribeBtn">Unsubscribe</button>
+            </div>
+        </div>
+        <div>
+            <input type="text" id="newTopicName" placeholder="New topic name">
+            <button id="addTopicBtn">Add Topic</button>
+            <button id="removeEventsBtn">Remove Events From Tech</button>
+        </div>
+        <div id="message"></div>
+    </section>
+</main>
+</body>
+</html>

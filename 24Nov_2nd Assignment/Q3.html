@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q3 Interactive FAQ</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q3.js"></script>
+    <style>
+    body {
+        font-family: "Segoe UI", sans-serif;
+        padding: 30px;
+        background: #f5f6fa;
+    }
+
+    .faq-item {
+        background: #fff;
+        padding: 18px;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        margin-bottom: 15px;
+    }
+
+    .question {
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .question:hover {
+        color: #0984e3;
+    }
+
+    .answer {
+        margin-top: 10px;
+        background: #f1f2f6;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    input {
+        padding: 8px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>FAQ</h1>
+</header>
+<main>
+    <section id="faqSection">
+        <article class="faq-item">
+            <h2 class="question">What is your return policy?</h2>
+            <div class="answer">
+                <p>We accept returns within 30 days.</p>
+                <input type="text" placeholder="Your feedback">
+            </div>
+        </article>
+        <article class="faq-item">
+            <h2 class="question">How long is delivery time?</h2>
+            <div class="answer">
+                <p>Delivery usually takes 3–5 days.</p>
+                <input type="text" placeholder="Your feedback">
+            </div>
+        </article>
+        <article class="faq-item">
+            <h2 class="question">Do you ship internationally?</h2>
+            <div class="answer">
+                <p>Yes, we ship worldwide.</p>
+                <input type="text" placeholder="Your feedback">
+            </div>
+        </article>
+        <article class="faq-item">
+            <h2 class="question">How can I track my order?</h2>
+            <div class="answer">
+                <p>Use the tracking link sent via email.</p>
+                <input type="text" placeholder="Your feedback">
+            </div>
+        </article>
+        <article class="faq-item">
+            <h2 class="question">How can I contact support?</h2>
+            <div class="answer">
+                <p>You can email or call us.</p>
+                <input type="text" placeholder="Your feedback">
+            </div>
+        </article>
+    </section>
+</main>
+</body>
+</html>

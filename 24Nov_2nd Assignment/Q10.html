@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q10 Registration Form Validation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q10.js"></script>
+    <style>
+    body {
+        background: #ecf0f1;
+        padding: 30px;
+        font-family: Arial;
+    }
+
+    form {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        width: 320px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+        padding: 10px;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #b2bec3;
+    }
+
+    button {
+        padding: 10px;
+        width: 100%;
+        border: none;
+        margin-top: 15px;
+        background: #0984e3;
+        color: #fff;
+        border-radius: 6px;
+    }
+
+    #successMessage {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>User Registration</h1>
+</header>
+<main>
+    <section>
+        <form id="regForm" novalidate>
+            <div class="field-group">
+                <label for="name">Name</label><br>
+                <input type="text" id="name">
+            </div>
+            <div class="field-group">
+                <label for="email">Email</label><br>
+                <input type="text" id="email">
+            </div>
+            <div class="field-group">
+                <label for="password">Password</label><br>
+                <input type="password" id="password">
+            </div>
+            <button type="submit" id="submitBtn">Register</button>
+        </form>
+        <div id="successMessage"></div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q4 Special Offer Banner</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q4.js"></script>
+    <style>
+    body {
+        font-family: Arial;
+        padding: 30px;
+        background: #f4f6f9;
+    }
+
+    .banner {
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 10px;
+        background: linear-gradient(45deg, #0984e3, #74b9ff);
+        color: #fff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        font-size: 18px;
+    }
+
+    .special {
+        background: linear-gradient(45deg, #e84393, #fd79a8);
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 5px;
+        background: #636e72;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #2d3436;
+    }
+</style>
+
+</head>
+<body>
+<header>
+    <h1>Special Offers</h1>
+</header>
+<main>
+    <section class="controls">
+        <button id="hideBtn">Hide Special Banners</button>
+        <button id="showBtn">Show All Banners</button>
+        <button id="slideToggleBtn">Slide Up/Down</button>
+        <button id="fadeToggleBtn">Fade In/Out All</button>
+    </section>
+    <section id="bannerContainer">
+        <div class="banner special">Limited Time Offer: 50% off!</div>
+        <div class="banner">Free Shipping on orders over 999</div>
+        <div class="banner">Buy 1 Get 1 Free on select items</div>
+        <div class="banner">New Arrivals with special pricing</div>
+        <div class="banner">Exclusive members-only discounts</div>
+    </section>
+</main>
+</body>
+</html>

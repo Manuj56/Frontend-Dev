@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q8 Dynamic Blog Posts</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q8.js"></script>
+   <style>
+    body {
+        background: #ecf0f1;
+        padding: 30px;
+        font-family: Arial;
+    }
+
+    #posts .post {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+        margin: 5px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        background: #0984e3;
+        color: #fff;
+    }
+
+    .highlight-post {
+        background: #ffeaa7;
+    }
+
+    .tag {
+        background: #b2bec3;
+        padding: 3px 7px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+</style>
+
+</head>
+<body>
+<header>
+    <h1>Blog Admin</h1>
+</header>
+<main>
+    <section>
+        <button id="addPostBtn">Add New Post</button>
+        <button id="prependPostBtn">Prepend Featured Post</button>
+        <button id="removeLastPostBtn">Remove Last Post</button>
+        <input type="text" id="tagText" placeholder="Tag text">
+        <button id="addTagBeforeBtn">Add Tag Before Titles</button>
+        <button id="addTagAfterBtn">Add Tag After Titles</button>
+        <input type="text" id="keywordInput" placeholder="Keyword to highlight">
+        <button id="highlightKeywordBtn">Highlight Posts</button>
+
+        <div id="posts">
+            <article class="post">
+                <h2 class="title">Getting started with JavaScript</h2>
+                <p>Basics of JavaScript language.</p>
+            </article>
+            <article class="post">
+                <h2 class="title">Machine Learning Overview</h2>
+                <p>Introduction to ML concepts.</p>
+            </article>
+            <article class="post">
+                <h2 class="title">React for Beginners</h2>
+                <p>Building UI components using React.</p>
+            </article>
+            <article class="post">
+                <h2 class="title">Database Design Principles</h2>
+                <p>Learn about normalization and relationships.</p>
+            </article>
+            <article class="post">
+                <h2 class="title">Web Security Essentials</h2>
+                <p>Protecting applications from common attacks.</p>
+            </article>
+        </div>
+    </section>
+</main>
+</body>
+</html>

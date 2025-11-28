@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q5 Team Members Directory</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="q5.js"></script>
+    <style>
+    body {
+        background: #ecf0f1;
+        padding: 30px;
+        font-family: Arial;
+    }
+
+    .department {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+    .manager {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .employee {
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .employee:hover {
+        background: #dfe6e9;
+    }
+
+    .highlight {
+        background: #ffeaa7 !important;
+    }
+
+    .dept-highlight {
+        background: #dff9fb !important;
+    }
+
+    .contact {
+        font-size: 12px;
+        color: #636e72;
+    }
+
+    .controls button {
+        padding: 10px 15px;
+        border-radius: 6px;
+        background: #0984e3;
+        color: #fff;
+        border: none;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Team Directory</h1>
+</header>
+<main>
+    <section class="controls">
+        <button id="randomEmployeeBtn">Highlight Random Employee Siblings</button>
+        <button id="toggleTeamsBtn">Collapse/Expand All Teams</button>
+    </section>
+    <section id="teams">
+        <section class="department" data-dept="Sales">
+            <h2 class="deptTitle">Sales Department</h2>
+            <div class="manager">Manager: Alice</div>
+            <ul>
+                <li class="employee">Eve<span class="contact"> | eve@sales.com</span></li>
+                <li class="employee">Bob<span class="contact"> | bob@sales.com</span></li>
+                <li class="employee">Charlie<span class="contact"> | charlie@sales.com</span></li>
+            </ul>
+        </section>
+        <section class="department" data-dept="IT">
+            <h2 class="deptTitle">IT Department</h2>
+            <div class="manager">Manager: David</div>
+            <ul>
+                <li class="employee">Isha<span class="contact"> | isha@it.com</span></li>
+                <li class="employee">Karan<span class="contact"> | karan@it.com</span></li>
+                <li class="employee">Riya<span class="contact"> | riya@it.com</span></li>
+            </ul>
+        </section>
+        <section class="department" data-dept="HR">
+            <h2 class="deptTitle">HR Department</h2>
+            <div class="manager">Manager: Neha</div>
+            <ul>
+                <li class="employee">Maya<span class="contact"> | maya@hr.com</span></li>
+                <li class="employee">Arjun<span class="contact"> | arjun@hr.com</span></li>
+                <li class="employee">Sara<span class="contact"> | sara@hr.com</span></li>
+            </ul>
+        </section>
+    </section>
+</main>
+</body>
+</html>
