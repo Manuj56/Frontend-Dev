@@ -1,0 +1,88 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "section": "A",
+      "marks": 88,
+      "grade": "A"
+    },
+    {
+      "id": 2,
+      "name": "Priya Verma",
+      "section": "B",
+      "marks": 76,
+      "grade": "B"
+    },
+    {
+      "id": 3,
+      "name": "Aman Gupta",
+      "section": "A",
+      "marks": 92,
+      "grade": "A+"
+    },
+    {
+      "id": 4,
+      "name": "Simran Kaur",
+      "section": "C",
+      "marks": 67,
+      "grade": "C"
+    },
+    {
+      "id": 5,
+      "name": "Rohan Mehta",
+      "section": "B",
+      "marks": 81,
+      "grade": "A"
+    },
+    {
+      "id": 6,
+      "name": "Sneha Singh",
+      "section": "A",
+      "marks": 95,
+      "grade": "A+"
+    },
+    {
+      "id": 7,
+      "name": "Aditya Jain",
+      "section": "C",
+      "marks": 72,
+      "grade": "B"
+    },
+    {
+      "id": 8,
+      "name": "Kritika Joshi",
+      "section": "B",
+      "marks": 84,
+      "grade": "A"
+    },
+    {
+      "id": 9,
+      "name": "Harshit Tiwari",
+      "section": "A",
+      "marks": 58,
+      "grade": "D"
+    },
+    {
+      "id": 10,
+      "name": "Muskan Chawla",
+      "section": "C",
+      "marks": 90,
+      "grade": "A"
+    },
+    {
+      "id": 11,
+      "name": "Vivek Saxena",
+      "section": "B",
+      "marks": 65,
+      "grade": "C"
+    },
+    {
+      "id": 12,
+      "name": "Anjali Mishra",
+      "section": "A",
+      "marks": 78,
+      "grade": "B"
+    }
+  ]
+}

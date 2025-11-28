@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #b3ccff;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+}
+
+.card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.card-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.actions button {
+  margin-left: 10px;
+}
+
+button {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.student-table th,
+.student-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 15px;
+}
+
+.student-table th {
+  background: #f0f2f7;
+  font-weight: 600;
+  color: #444;
+  text-align: left;
+}
+
+.student-table tr:hover {
+  background: #f8fafc;
+}
+
+.grade-badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.grade-A {
+  background: #16a34a;
+}
+
+.grade-Aplus {
+  background: #15803d;
+}
+
+.grade-B {
+  background: #2563eb;
+}
+
+.grade-C {
+  background: #ca8a04;
+}
+
+.grade-D {
+  background: #dc2626;
+}
+
+.form-grid {
+  display: grid;
+  gap: 15px;
+  margin-top: 16px;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #444;
+}
+
+input {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.details-grid p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.app-container {
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+.filter-bar input:focus,
+.filter-bar select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.topper-row {
+  background: #ecfdf5 !important;
+  font-weight: 600;
+}
